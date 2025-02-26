@@ -1,3 +1,6 @@
+import "../../Shelves/script.js";
+import "./script.js";
+
 const Search = () => {
   return (
     <div className="w-4/12 flex">
