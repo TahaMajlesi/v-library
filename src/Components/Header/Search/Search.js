@@ -1,4 +1,3 @@
-import "../../Shelves/script.js";
 import "./script.js";
 
 const Search = () => {

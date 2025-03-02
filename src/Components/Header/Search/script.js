@@ -1,9 +1,10 @@
 import $ from "../../../../node_modules/jquery/dist/jquery.min";
-import results from "../../Shelves/script.js";
+import * as App from "../../App/App.js";
+
 $(document).ready(function() {
     $("#Searchbox").keyup(function(event) {
         if (event.keyCode === 13) {
-            results();
+            App.Getdata($("#Searchbox").val());
         }
     });
 });
