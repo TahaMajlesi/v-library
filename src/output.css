@@ -14,6 +14,7 @@
     --color-cyan-800: oklch(0.45 0.085 224.283);
     --color-blue-500: oklch(0.623 0.214 259.815);
     --color-rose-500: oklch(0.645 0.246 16.439);
+    --color-gray-500: oklch(0.551 0.027 264.364);
     --color-gray-600: oklch(0.446 0.03 256.802);
     --color-gray-900: oklch(0.21 0.034 264.665);
     --color-white: #fff;
@@ -272,9 +273,6 @@
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
-  .h-4\/12 {
-    height: calc(4/12 * 100%);
-  }
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
@@ -292,6 +290,12 @@
   }
   .w-2 {
     width: calc(var(--spacing) * 2);
+  }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
+  .w-3\/12 {
+    width: calc(3/12 * 100%);
   }
   .w-4 {
     width: calc(var(--spacing) * 4);
@@ -319,6 +323,9 @@
   }
   .resize {
     resize: both;
+  }
+  .flex-col {
+    flex-direction: column;
   }
   .justify-around {
     justify-content: space-around;
@@ -370,6 +377,9 @@
   }
   .bg-cyan-800 {
     background-color: var(--color-cyan-800);
+  }
+  .bg-gray-500 {
+    background-color: var(--color-gray-500);
   }
   .bg-gray-600 {
     background-color: var(--color-gray-600);
@@ -459,11 +469,6 @@
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-  .focus\:border-inherit {
-    &:focus {
-      border-color: inherit;
-    }
   }
   .focus\:outline-0 {
     &:focus {
