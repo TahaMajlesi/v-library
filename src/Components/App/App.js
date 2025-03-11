@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import $ from "../../../node_modules/jquery/dist/jquery.min";
 import Header from "../Header/Header";
 import Shelves from "../Shelves/Shelves";
@@ -25,10 +26,10 @@ const App = () => {
   }
 
   return (
-    <>
+    <div>
       <Header />
       <Shelves booksList={booksList} />{" "}
-    </>
+    </div>
   );
 };
 
